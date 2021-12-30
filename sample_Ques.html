@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ques Ans</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div style="margin-left: 50px;border: 1px solid black;padding: 20px;">
+
+	<label style="position: fixed;width: 100%;text-align: center;">Time Duration 5 minute:<label id="count" style="margin-left: 5px; color: red;"></label></label><br>
+
+	<b> Notice: Please enter your answer option (a/b/c/d) in the input field. </b> <br><br>
+
+	<form name="myform" >
+	1.Anamalai Tiger Reserve is located at ?<br>
+	a.Kerala<br>
+	b.Gujarat<br>
+	c.Tamil Nadu<br>
+	d.Haryana<br>
+	
+	<input id="ques1" type="text"  placeholder="a/b/c/d" required><br><br>
+	
+	2.Parambikulam Tiger Reserve is in which state ?<br>
+	a.Karnataka<br>
+	b.Kerala<br>
+	c.Bihar<br>
+	d.Goa<br>
+	<br>
+	<input id="ques2" type="text" name=""  placeholder="a/b/c/d" required=""><br><br>
+	3.The largest district in Kerala is ?<br>
+	a) Palakkad<br>
+	b) Malappuram<br>
+	c) Wayanadu<br>
+	d) Alappuzha<br>
+	<input id="ques3" type="text" name="" placeholder="a/b/c/d" required=""><br><br>
+	4. Technopark, the largest Information Technology park in Asia in terms of area, is situated in?<br>
+	a) Palakkad<br>
+	b) Trivandrum<br>
+	c) Cochin<br>
+	d) Malappuram<br>
+	<input id="ques4" type="text" name="" placeholder="a/b/c/d" required=""><br><br>
+	5.Who was the First Chief Minister of Kerala?<br>
+	a) C Achutha Menon<br>
+	b) K Karunakaran<br>
+	c) Pattom A. Thanu Pillai<br>
+	d) EMS Namboodiripad<br>
+	<input id="ques5" type="text" name="" placeholder="a/b/c/d" required=""><br><br>
+ 	6.Which of the following National Park is not in Kerala?<br>
+	a) Silent Valley National Park<br>
+	b) Eravikulam National Park<br>
+	c) Pambadum Shola National Park<br>
+	d) Madhav National Park<br>
+	<input id="ques6" type="text" name="" placeholder="a/b/c/d" required=""><br><br>
+	7.Total number of districts in kerala?<br>
+	a)11<br>
+	b)13<br>
+	c)14<br>
+	d)22<br>
+	<input id="ques7" type="text" name="" placeholder="a/b/c/d" required=""><br><br>
+	8.Which one is the largest lake in kerala?<br>
+	a)Sasthamcotta Lake<br>
+	b)Vembanadu Lake<br>
+	c)Pookode Lake<br>
+	d)Ashtamudi Lake<br>
+	<input id="ques8" type="text" name="" placeholder="a/b/c/d" required=""><br><br>
+	9.Asia's first arch dam that was constructed across the Kuravan and Kurathi hills<br>
+	a)Kulamavu Dam<br>
+	b)Idukki Dam<br>
+	c)Banasura Sagar Dam<br>
+	d)Mullaperiyar Dam<br>
+	<input id="ques9" type="text" name="" placeholder="a/b/c/d" required=""><br><br>
+	10.The K. R. Narayanan National Institute of Visual Science and Arts is located at<br>
+	a)Kottayam<br>
+	b)Palakkad<br>
+	c)Kannur<br>
+	d)Kumarakom<br>
+	<input id="ques10" type="text" name="" placeholder="a/b/c/d" required=""><br><br>
+	<button style="width: 179px;" onclick="clck();">Submit</button>
+
+	</form>
+
+	</div>
+	
+
+	<script>
+		var Correct = 0;
+		function clck()
+		{
+			var answer1=document.getElementById('ques1').value;
+			var answer2=document.getElementById('ques2').value;
+			var answer3=document.getElementById('ques3').value;
+			var answer4=document.getElementById('ques4').value;
+			var answer5=document.getElementById('ques5').value;
+			var answer6=document.getElementById('ques6').value;
+			var answer7=document.getElementById('ques7').value;
+			var answer8=document.getElementById('ques8').value;
+			var answer9=document.getElementById('ques9').value;
+			var answer10=document.getElementById('ques10').value;
+			// var Correct = 0;
+            
+            if (answer1 == "C" || answer1=="c") { Correct++; }
+            if (answer2 == "B" || answer2=="b") { Correct++; }
+            if (answer3 == "A" || answer3=="a") { Correct++; }
+            if (answer4 == "B" || answer4=="b") { Correct++; }
+            if (answer5 == "D" || answer5=="d") { Correct++; }
+            if (answer6 == "D" || answer6=="d") { Correct++; }
+			if (answer7 == "C" || answer7=="c") { Correct++; }
+			if (answer8 == "B" || answer8=="b") { Correct++; }
+			if (answer9 == "B" || answer9=="b") { Correct++; }
+			if (answer10 == "A" || answer10=="a") { Correct++; } 
+			
+
+            document.write("Total Mark is :",Correct);		
+
+		}
+
+		var i=300;
+		var x=setInterval(function () {
+			if(i==0)
+			{
+				clearInterval(x);
+				clck();
+			}
+			document.getElementById('count').innerHTML=i;
+			i--;
+			
+		},1000);
+
+	
+	</script>
+
+	
+</body>
+</html>
